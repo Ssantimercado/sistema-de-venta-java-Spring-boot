@@ -1,0 +1,20 @@
+<footer th:fragment="pie" class="px-2 py-2 fixed-bottom bg-dark" xmlns:th="http://www.w3.org/1999/xhtml">
+    <span class="text-muted">Sistema de ventas
+        <i class="fa fa-code"></i>
+        con
+        <i class="fa fa-heart"></i>
+        por
+        <a class="text-white" href="https://github.com/Ssantimercado">Santiago Mercado</a>
+    </span>
+    <script type="text/javascript">
+        // Tomado de https://github.com/parzibyte/cotizaciones_web/blob/master/js/cotizaciones.js#L2
+        document.addEventListener("DOMContentLoaded", () => {
+            const menu = document.querySelector("#menu"),
+                botonMenu = document.querySelector("#botonMenu");
+            if (menu) {
+                botonMenu.addEventListener("click", () => menu.classList.toggle("show"));
+            }
+        });
+    </script>
+</footer>
+
